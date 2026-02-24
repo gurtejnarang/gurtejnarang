@@ -203,7 +203,7 @@ export default function Resume() {
                 2. Open the PDF → Share → Get embeddable link
                 3. Replace the placeholder div above with:
                 <iframe
-                  src="YOUR_GOOGLE_DRIVE_EMBED_URL"
+                  src="https://drive.google.com/file/d/1wGQLXPaVQhPj4m_m5roZDk6D0VNT-Fi-/view?usp=share_link"
                   width="100%"
                   height="100%"
                   style={{ border: 'none' }}

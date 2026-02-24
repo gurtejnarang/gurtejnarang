@@ -78,26 +78,6 @@ export default function Hero() {
       }} />
 
       <div style={{ position: 'relative', maxWidth: 'var(--max-w)', margin: '0 auto', width: '100%' }}>
-        {/* Status badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          style={{
-            display: 'inline-flex', alignItems: 'center', gap: 8,
-            background: 'rgba(26,107,250,0.06)',
-            border: '1px solid rgba(26,107,250,0.2)',
-            borderRadius: 99,
-            padding: '6px 16px',
-            marginBottom: 40,
-          }}
-        >
-          <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#22c55e', display: 'block', boxShadow: '0 0 0 3px rgba(34,197,94,0.2)' }} />
-          <span style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--gray-700)', letterSpacing: '0.06em' }}>
-            Open to opportunities
-          </span>
-        </motion.div>
-
         {/* Main headline */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

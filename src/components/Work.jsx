@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 const sites = [
   {
     tag: 'My Startup',
-    name: 'Waves',
+    name: 'Wave',
     url: 'https://wavewebsite-five.vercel.app',
-    desc: 'The digital home for my startup, Waves. Built from zero to capture the brand vision and convert visitors into believers.',
+    desc: 'The digital home for my startup, Wave. Built from zero to capture the brand vision and convert visitors into believers.',
     index: '01',
     tech: ['React', 'Vercel', 'Startup'],
   },

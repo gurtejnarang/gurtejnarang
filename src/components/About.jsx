@@ -146,7 +146,7 @@ export default function About() {
             {/* Numbers */}
             {[
               { num: '3+', label: 'Websites shipped' },
-              { num: '1', label: 'Startup founded (Waves)' },
+              { num: '1', label: 'Startup founded (Wave)' },
               { num: '∞', label: 'Ideas in the pipeline' },
             ].map((s, i) => (
               <motion.div

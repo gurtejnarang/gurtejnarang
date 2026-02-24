@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 const highlights = [
-  { icon: '🚀', text: 'Founder of Waves — building in the startup ecosystem' },
+  { icon: '🚀', text: 'Founder of Wave — building in the startup ecosystem' },
   { icon: '🎨', text: 'Web design & development for diverse clients' },
   { icon: '📣', text: 'Strategic communications & brand storytelling' },
   { icon: '⚡', text: 'Cross-functional creative leadership' },
@@ -48,7 +48,6 @@ export default function Resume() {
         }}
         className="resume-grid"
         >
-          {/* Left col */}
           <motion.div
             initial={{ opacity: 0, x: -24 }}
             animate={visible ? { opacity: 1, x: 0 } : {}}
@@ -95,22 +94,19 @@ export default function Resume() {
               ))}
             </div>
 
-            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-              <a
-                href="https://drive.google.com/drive/folders/1bhJGzvYe2UNVw9BCfzmdbu0PRoApy6kD?usp=share_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={glassBtnStyle}
-              >
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <path d="M7 1v9M3 7l4 4 4-4M1 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                Download Resume
-              </a>
-            </div>
+            <a
+              href="https://drive.google.com/file/d/1wGQLXPaVQhPj4m_m5roZDk6D0VNT-Fi-/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={glassBtnStyle}
+            >
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M7 1v9M3 7l4 4 4-4M1 13h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              Download Resume
+            </a>
           </motion.div>
 
-          {/* Right col — resume embed */}
           <motion.div
             initial={{ opacity: 0, x: 24 }}
             animate={visible ? { opacity: 1, x: 0 } : {}}
@@ -122,9 +118,10 @@ export default function Resume() {
               overflow: 'hidden',
               boxShadow: '0 8px 40px rgba(0,0,0,0.06)',
               height: 680,
+              display: 'flex',
+              flexDirection: 'column',
             }}
           >
-            {/* Window chrome */}
             <div style={{
               display: 'flex',
               alignItems: 'center',
@@ -132,6 +129,7 @@ export default function Resume() {
               padding: '14px 20px',
               background: 'var(--off-white)',
               borderBottom: '1px solid var(--border)',
+              flexShrink: 0,
             }}>
               {['#FF5F57','#FFBD2E','#28C840'].map((c, i) => (
                 <span key={i} style={{ width: 12, height: 12, borderRadius: '50%', background: c, display: 'block' }} />
@@ -144,73 +142,12 @@ export default function Resume() {
                 letterSpacing: '0.04em',
               }}>Resume — Gurtej Narang.pdf</span>
             </div>
-            {/* Placeholder or actual PDF embed */}
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              height: 'calc(100% - 49px)',
-              gap: 16,
-              padding: 40,
-              textAlign: 'center',
-            }}>
-              <div style={{
-                width: 72, height: 72,
-                background: 'var(--off-white)',
-                border: '1px solid var(--border)',
-                borderRadius: 16,
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: 32,
-              }}>📄</div>
-              <div>
-                <p style={{
-                  fontFamily: 'var(--font-display)',
-                  fontWeight: 700,
-                  fontSize: 20,
-                  letterSpacing: '-0.02em',
-                  color: 'var(--black)',
-                  marginBottom: 8,
-                }}>Resume Preview</p>
-                <p style={{
-                  fontFamily: 'var(--font-body)',
-                  fontSize: 13,
-                  color: 'var(--gray-500)',
-                  lineHeight: 1.6,
-                  maxWidth: 280,
-                  margin: '0 auto 24px',
-                }}>
-                  Upload your resume PDF to Google Drive and paste the embed link in{' '}
-                  <code style={{ fontFamily: 'var(--font-mono)', background: 'var(--off-white)', padding: '2px 6px', borderRadius: 4, fontSize: 11 }}>
-                    Resume.jsx
-                  </code>
-                </p>
-                <a
-                  href="https://drive.google.com/drive/folders/1bhJGzvYe2UNVw9BCfzmdbu0PRoApy6kD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={glassBtnStyle}
-                >
-                  Open Drive Folder
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M1 11L11 1M11 1H4M11 1v7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </a>
-              </div>
-              {/*
-                TO EMBED YOUR RESUME:
-                1. Upload PDF to Google Drive
-                2. Open the PDF → Share → Get embeddable link
-                3. Replace the placeholder div above with:
-                <iframe
-                  src="https://drive.google.com/file/d/1wGQLXPaVQhPj4m_m5roZDk6D0VNT-Fi-/view?usp=share_link"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 'none' }}
-                  title="Resume"
-                />
-              */}
-            </div>
+            <iframe
+              src="https://drive.google.com/file/d/1wGQLXPaVQhPj4m_m5roZDk6D0VNT-Fi-/preview"
+              style={{ border: 'none', flex: 1, width: '100%', display: 'block' }}
+              title="Gurtej Narang — Resume"
+              allow="autoplay"
+            />
           </motion.div>
         </div>
       </div>

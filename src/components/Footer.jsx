@@ -40,7 +40,7 @@ export default function Footer() {
         <div style={{ display: 'flex', gap: 24, alignItems: 'center' }}>
           {[
             { label: 'Drive', href: 'https://drive.google.com/drive/folders/1bhJGzvYe2UNVw9BCfzmdbu0PRoApy6kD' },
-            { label: 'Waves', href: 'https://wavewebsite-five.vercel.app' },
+            { label: 'Wave', href: 'https://wavewebsite-five.vercel.app' },
             { label: 'Email', href: 'mailto:hello@gurtejnarang.com' },
           ].map(l => (
             <a

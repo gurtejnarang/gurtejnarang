@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 
 const highlights = [
   { icon: '🚀', text: 'Founder of Wave — building in the startup ecosystem' },
+  { icon: '💡', text: 'GTM strategy & enterprise tech — taking products to market at scale' },
   { icon: '🎨', text: 'Web design & development for diverse clients' },
   { icon: '📣', text: 'Strategic communications & brand storytelling' },
   { icon: '⚡', text: 'Cross-functional creative leadership' },

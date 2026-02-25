@@ -80,7 +80,7 @@ export default function About() {
             </p>
 
             <a
-              href="mailto:hello@gurtejnarang.com"
+              href="mailto:gurtejnarang@gmail.com"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',

@@ -80,7 +80,7 @@ export default function Nav() {
           </a>
         ))}
         <a
-          href="mailto:hello@gurtejnarang.com"
+          href="mailto:gurtejnarang@gmail.com"
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 11,

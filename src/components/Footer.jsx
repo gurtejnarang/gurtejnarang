@@ -41,7 +41,7 @@ export default function Footer() {
           {[
             { label: 'Drive', href: 'https://drive.google.com/drive/folders/1bhJGzvYe2UNVw9BCfzmdbu0PRoApy6kD' },
             { label: 'Wave', href: 'https://wavewebsite-five.vercel.app' },
-            { label: 'Email', href: 'mailto:hello@gurtejnarang.com' },
+            { label: 'Email', href: 'mailto:gurtejnarang@gmail.com' },
           ].map(l => (
             <a
               key={l.label}

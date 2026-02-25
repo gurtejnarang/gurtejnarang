@@ -80,7 +80,7 @@ export default function About() {
             </p>
 
             <a
-              href="mailto:gurtejnarang@gmail.com"
+              href="mailto:hello@gurtejnarang.com"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -145,7 +145,7 @@ export default function About() {
 
             {/* Numbers */}
             {[
-              { num: '5+', label: 'Websites shipped' },
+              { num: '3+', label: 'Websites shipped' },
               { num: '1', label: 'Startup founded (Wave)' },
               { num: '∞', label: 'Ideas in the pipeline' },
             ].map((s, i) => (

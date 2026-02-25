@@ -27,27 +27,7 @@ npm run preview
 
 ## Customization
 
-### 1. Add Your Resume PDF
-
-In `src/components/Resume.jsx`, find the comment block and replace the placeholder with:
-
-```jsx
-<iframe
-  src="YOUR_GOOGLE_DRIVE_PDF_EMBED_URL"
-  width="100%"
-  height="100%"
-  style={{ border: 'none' }}
-  title="Resume"
-/>
-```
-
-To get the embed URL: Open your PDF in Drive → three-dot menu → Embed item → copy the `src` URL.
-
-### 2. Update Your Email
-
-Search for `hello@gurtejnarang.com` and replace with your actual email.
-
-### 3. Drive Folder
+### 1. Drive Folder
 
 The Drive folder ID is set in `src/components/Portfolio.jsx`:
 ```js
